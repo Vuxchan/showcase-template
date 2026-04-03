@@ -95,7 +95,7 @@ function addSlideShowImages(img) {
 
 }
 
-images.forEach(img => addSlideShowImages(img))
+// images.forEach(img => addSlideShowImages(img))
 
 const countries = ["United states", "Canada", "Mexico", "Brazil", "Argentina", "Sweden",
     "Turkey", "England", "Ireland", "Finland", "Norway", "India", "Sri Lanka",
