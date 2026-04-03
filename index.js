@@ -97,22 +97,22 @@ function addSlideShowImages(img) {
 
 // images.forEach(img => addSlideShowImages(img))
 
-const countries = ["United states", "Canada", "Mexico", "Brazil", "Argentina", "Sweden",
-    "Turkey", "England", "Ireland", "Finland", "Norway", "India", "Sri Lanka",
-    "China", "Russia", "Australia", "Singapore", "Malaysia"
+const countries = ["Cơm tấm", "Bún đậu mắm tôm", "Phở bò", "Kimbap", "Trà sữa", "Bánh mì",
+    "Mì cay", "Gà rán", "Nem nướng Nha Trang", "Xôi bắp", "Bánh tráng nướng", "Lẩu sinh viên", "Cơm rang dưa bò",
+    "Sữa tươi trân châu", "Bingsu", "Chè", "Bún chả", "Bánh xèo"
 ]
 
 const places = [
-"Eiffle Tower", "Great Wall of China", "Taj Mahal", 
-"Bali", "Maldives", "Leaning tower of Pisa", "Statue of Liberty",   
+    "Căn tin đại học", "Ký túc xá", "Làng Đại học",
+    "Khu ăn uống đêm", "Đường nội bộ", "Chợ sinh viên", "Giảng đường",
 ]
 
 
 const countriesContainer = document.querySelector(".countries-container")
 const placeContainer = document.querySelector(".places-container")
 
-function addSlidingPlace(place, container){
-    
+function addSlidingPlace(place, container) {
+
     const imageContainer = `
             <div class="tw-min-w-fit tw-p-2 tw-px-3 tw-w-max tw-h-[50px]
                         tw-border-solid tw-border-[1px] tw-flex 
@@ -128,12 +128,12 @@ function addSlidingPlace(place, container){
 }
 
 
-countries.forEach( img => addSlidingPlace(img, countriesContainer))
-countries.forEach( img => addSlidingPlace(img, countriesContainer))
+countries.forEach(img => addSlidingPlace(img, countriesContainer))
+countries.forEach(img => addSlidingPlace(img, countriesContainer))
 
-places.forEach( img => addSlidingPlace(img, placeContainer))
-places.forEach( img => addSlidingPlace(img, placeContainer))
-places.forEach( img => addSlidingPlace(img, placeContainer))
+places.forEach(img => addSlidingPlace(img, placeContainer))
+places.forEach(img => addSlidingPlace(img, placeContainer))
+places.forEach(img => addSlidingPlace(img, placeContainer))
 
 
 const swiper = new Swiper(".slideshow-container", {
@@ -144,15 +144,15 @@ const swiper = new Swiper(".slideshow-container", {
     slidesPerView: "auto",
     creativeEffect: {
         prev: {
-          shadow: true,
-          origin: "left center",
-          translate: ["-5%", 0, -200],
-          rotate: [0, 100, 0],
+            shadow: true,
+            origin: "left center",
+            translate: ["-5%", 0, -200],
+            rotate: [0, 100, 0],
         },
         next: {
-          origin: "right center",
-          translate: ["5%", 0, -200],
-          rotate: [0, -100, 0],
+            origin: "right center",
+            translate: ["5%", 0, -200],
+            rotate: [0, -100, 0],
         },
     },
     navigation: {
@@ -174,7 +174,7 @@ faqAccordion.forEach(function (btn) {
 
         // Toggle 'rotate' class to rotate the arrow
         let content = this.nextElementSibling
-        
+
         // content.classList.toggle('!tw-hidden')
         if (content.style.maxHeight === '200px') {
             content.style.maxHeight = '0px'
@@ -195,14 +195,16 @@ const sections = gsap.utils.toArray("section")
 
 sections.forEach((sec) => {
 
-    const revealUptimeline = gsap.timeline({paused: true, 
-                                            scrollTrigger: {
-                                                            trigger: sec,
-                                                            start: "10% 80%", // top of trigger hits the top of viewport
-                                                            end: "20% 90%",
-                                                            // markers: true,
-                                                            // scrub: 1,
-                                                        }})
+    const revealUptimeline = gsap.timeline({
+        paused: true,
+        scrollTrigger: {
+            trigger: sec,
+            start: "10% 80%", // top of trigger hits the top of viewport
+            end: "20% 90%",
+            // markers: true,
+            // scrub: 1,
+        }
+    })
 
     revealUptimeline.to(sec.querySelectorAll(".reveal-up"), {
         opacity: 1,
