@@ -191,12 +191,212 @@ header > .collapsible-header{
 }
 
 .footer-link{
-    color: #434242;
+    color: #2e3a4d;
     transition: color 0.3s;
+    line-height: 1.25;
 }
 
 .footer-link:hover{
-    color: #0b0b0b;
+    color: #1d2736;
+}
+
+.grab-footer {
+    background-color: #d4d8dd;
+    color: #2e3a4d;
+    border-top: 1px solid #e9ecef;
+}
+
+.grab-footer-inner {
+    max-width: 1560px;
+    margin: 0 auto;
+    padding: 48px 52px 40px;
+}
+
+.grab-footer-top {
+    display: grid;
+    grid-template-columns: minmax(300px, 1.5fr) repeat(6, minmax(120px, 1fr));
+    gap: 28px;
+    align-items: flex-start;
+}
+
+.grab-brand-col {
+    max-width: 360px;
+}
+
+.grab-logo {
+    color: #00b14f;
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.grab-slogan {
+    margin-top: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #2e3a4d;
+}
+
+.grab-company-text {
+    margin-top: 18px;
+    font-size: 1rem;
+    line-height: 1.35;
+    color: #2e3a4d;
+}
+
+.grab-follow {
+    margin-top: 22px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.grab-socials {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.grab-socials a {
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+    background-color: #2d3748;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.grab-link-col h3 {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #232f3f;
+}
+
+.grab-link-col {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    min-width: 0;
+}
+
+.grab-link-col .footer-link {
+    font-size: 1rem;
+}
+
+.grab-footer-bottom {
+    margin-top: 34px;
+}
+
+.grab-country-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #c2c8cf;
+    background-color: #d4d8dd;
+    color: #2e3a4d;
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: 1rem;
+}
+
+.grab-country-btn i {
+    margin-left: 26px;
+}
+
+.grab-flag-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 999px;
+    background: radial-gradient(circle at 38% 38%, #ffd24d 0 14%, #dc4545 18% 100%);
+}
+
+.grab-legal-row {
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.grab-legal-row p {
+    font-size: 1rem;
+    color: #2e3a4d;
+    line-height: 1.35;
+    max-width: 1100px;
+}
+
+.grab-badge {
+    background-color: #dd2d2d;
+    color: #ffffff;
+    font-weight: 700;
+    border-radius: 6px;
+    padding: 10px 18px;
+    min-width: 150px;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 1365px) {
+    .grab-footer-top {
+        grid-template-columns: minmax(300px, 1.5fr) repeat(3, minmax(180px, 1fr));
+    }
+}
+
+@media (max-width: 1024px) {
+    .grab-footer-inner {
+        padding: 32px 20px;
+    }
+
+    .grab-footer-top {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+
+    .grab-brand-col {
+        max-width: none;
+        grid-column: 1 / -1;
+    }
+
+    .grab-legal-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 640px) {
+    .grab-footer-top {
+        grid-template-columns: 1fr;
+    }
+
+    .grab-logo {
+        font-size: 1.8rem;
+    }
+
+    .grab-slogan {
+        font-size: 1rem;
+    }
+
+    .grab-company-text,
+    .grab-link-col .footer-link,
+    .grab-country-btn {
+        font-size: 1rem;
+    }
+
+    .grab-link-col h3 {
+        font-size: 1.05rem;
+    }
+
+    .grab-follow {
+        font-size: 1rem;
+    }
+
+    .grab-legal-row p {
+        font-size: 1rem;
+    }
 }
 
 /* Next & previous buttons */

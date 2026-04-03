@@ -26,9 +26,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-white tw-text-black">
+<body class="tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-white tw-pt-[60px] tw-text-black">
     <header
-        class="tw-max-w-lg:tw-px-4 tw-max-w-lg:tw-mr-auto tw-absolute tw-top-0 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-bg-opacity-0 tw-px-[5%] lg:tw-justify-around">
+        class="tw-max-w-lg:tw-px-4 tw-max-w-lg:tw-mr-auto tw-fixed tw-top-0 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-bg-opacity-0 tw-px-[5%] lg:tw-justify-around">
         <a class="tw-h-[60px] tw-w-[60px] tw-p-[4px]" href="">
             <img src="./assets/logo/logo.png" alt="logo" class="tw-object tw-h-full tw-w-full" />
         </a>
@@ -54,7 +54,7 @@
     </header>
 
     <section
-        class="hero-section tw-relative tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-md:tw-mt-[50px]"
+        class="hero-section tw-relative tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden"
         id="hero-section">
 
         <div class="tw-w-full tw-h-full tw-p-[5%]
@@ -459,50 +459,109 @@
         </div>
     </section>
 
-    <footer
-        class="tw-mt-auto tw-flex tw-w-full tw-place-content-around tw-gap-3 tw-p-[5%] tw-px-[10%] tw-text-white max-md:tw-flex-col">
-        <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-place-items-center tw-gap-6 max-md:tw-w-full">
-            <img src="./assets/logo/logo.png" alt="logo" srcset="" class="tw-max-w-[120px]" />
-            <div>
-                2 Lord Edward St,
-                <br />
-                D02 P634,
-                <br />
-                United States
-            </div>
-            <div class="tw-mt-3 tw-text-lg tw-font-semibold">Follow us</div>
-            <div class="tw-flex tw-gap-4 tw-text-2xl">
-                <a href="" aria-label="Facebook">
-                    <i class="bi bi-facebook"></i>
-                </a>
-                <a href="https://twitter.com/@pauls_freeman" aria-label="Twitter">
-                    <i class="bi bi-twitter"></i>
-                </a>
-                <a href="https://instagram.com/" class="tw-h-[40px] tw-w-[40px]" aria-label="Instagram">
-                    <i class="bi bi-instagram"></i>
-                </a>
-            </div>
-        </div>
+    <footer class="grab-footer tw-mt-auto tw-w-full">
+        <div class="grab-footer-inner">
+            <div class="grab-footer-top">
+                <div class="grab-brand-col">
+                    <div class="grab-logo">UniBite</div>
+                    <p class="grab-slogan">Forward Together</p>
+                    <p class="grab-company-text">
+                        Nhóm 10h37 - Đại học Bách khoa TP. Hồ Chí Minh
+                        <br />
+                        Địa chỉ: 120 Phố An Liễng, Đống Đa, Hà Nội 
+                        <br />
+                        Số điện thoại: 0312650437 do Sở Kế Hoạch và Đầu Tư TP. Hồ Chí Minh
+                        <br />
+                        Đại diện Nhóm: Lư Chấn Vũ
+                        <br />
+                        Chức vụ: Nhóm trưởng
+                    </p>
 
-        <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
-            <h2 class="tw-text-3xl max-md:tw-text-xl">Company</h2>
-            <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
-                <a href="" class="footer-link">Use cases</a>
-                <a href="" class="footer-link">Integrations</a>
-                <a href="" class="footer-link">Change logs</a>
-                <a href="" class="footer-link">Blogs</a>
-                <a href="" class="footer-link">Contact</a>
-            </div>
-        </div>
+                    <p class="grab-follow">Follow us and keep updated!</p>
+                    <div class="grab-socials" aria-label="social links">
+                        <a href="" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                        <a href="" aria-label="Youtube"><i class="bi bi-youtube"></i></a>
+                        <a href="" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
 
-        <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
-            <h2 class="tw-text-3xl max-md:tw-text-xl">Resources</h2>
-            <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
-                <a href="" class="footer-link">About us</a>
-                <a href="" class="footer-link">FAQ</a>
-                <a href="" class="footer-link">Contact Us</a>
-                <a href="" class="footer-link">Blogs</a>
-                <a href="" class="footer-link">Privacy policy</a>
+                <div class="grab-link-col">
+                    <h3>Về UniBite</h3>
+                    <a href="" class="footer-link">Câu chuyện của UniBite</a>
+                    <a href="" class="footer-link">Inside UniBite</a>
+                    <a href="" class="footer-link">Quan hệ đầu tư</a>
+                    <a href="" class="footer-link">Địa chỉ</a>
+                    <a href="" class="footer-link">Tin tưởng &amp; An toàn</a>
+                    <a href="" class="footer-link">Tác động</a>
+                    <a href="" class="footer-link">Tin tức</a>
+                    <a href="" class="footer-link">Làm việc tại UniBite</a>
+                    <a href="" class="footer-link">UniBiteForGood Fund</a>
+                </div>
+
+                <div class="grab-link-col">
+                    <h3>Người dùng</h3>
+                    <a href="" class="footer-link">Có gì mới?</a>
+                    <a href="" class="footer-link">Di chuyển</a>
+                    <a href="" class="footer-link">UniviteFood</a>
+                    <a href="" class="footer-link">UniBiteMart</a>
+                    <a href="" class="footer-link">UniBiteExpress</a>
+                    <a href="" class="footer-link">Ví điện tử Moca trên ứng dụng UniBite</a>
+                    <a href="" class="footer-link">UniBiteXu</a>
+                    <a href="" class="footer-link">Tính năng mới</a>
+                </div>
+
+                <div class="grab-link-col">
+                    <h3>Đối tác tài xế</h3>
+                    <a href="" class="footer-link">Thông tin mới nhất</a>
+                    <a href="" class="footer-link">Di chuyển</a>
+                    <a href="" class="footer-link">UniviteFood</a>
+                    <a href="" class="footer-link">UniBiteExpress</a>
+                    <a href="" class="footer-link">Trung tâm tài xế</a>
+                </div>
+
+                <div class="grab-link-col">
+                    <h3>Hợp tác cùng UniBite</h3>
+                    <a href="" class="footer-link">UnFood</a>
+                    <a href="" class="footer-link">UniBiteMart</a>
+                    <a href="" class="footer-link">Hướng dẫn</a>
+                    <a href="" class="footer-link">Financing</a>
+                    <a href="" class="footer-link">Blog</a>
+                </div>
+
+                <div class="grab-link-col">
+                    <h3>Doanh nghiệp / Công ty</h3>
+                    <a href="" class="footer-link">UniBite for Business</a>
+                    <a href="" class="footer-link">UniBiteAds</a>
+                    <a href="" class="footer-link">UniBiteGifts</a>
+                    <a href="" class="footer-link">UniBiteExpress</a>
+                    <a href="" class="footer-link">UniBiteMaps</a>
+                    <a href="" class="footer-link">Dịch vụ giao hàng công ty</a>
+                </div>
+
+                <div class="grab-link-col">
+                    <h3>đường dẫn nhanh</h3>
+                    <a href="" class="footer-link">Trung tâm Hỗ trợ</a>
+                    <a href="" class="footer-link">Thực đơn</a>
+                    <a href="" class="footer-link">Nền tảng nhà phát triển</a>
+                </div>
+            </div>
+
+            <div class="grab-footer-bottom">
+                <button class="grab-country-btn" aria-label="country selector" type="button">
+                    <span class="grab-flag-dot"></span>
+                    Việt Nam
+                    <i class="bi bi-chevron-down"></i>
+                </button>
+
+                <div class="grab-legal-row">
+                    <p>
+                        Dịch vụ trung gian thanh toán do Công ty Cổ phần Công nghệ và Dịch Vụ Moca cung cấp.
+                    </p>
+                    <div class="grab-badge">ĐÃ ĐĂNG KÝ</div>
+                </div>
             </div>
         </div>
     </footer>
