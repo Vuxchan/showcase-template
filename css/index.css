@@ -5,14 +5,37 @@
     --bg-color: #fff;
 
     --btn-color: #fdfdfd;/* button color*/
-    --btn-bg: #000;/* button bg color*/
+    --btn-bg: #459b5e;/* button bg color*/
 
-    --primary-text-color: #000;
-    --header-link-hover: #000;
+    --primary-text-color: #459b5e;
+    --header-link-hover: #ffffff;
     --input-hover-bd-color: #000;
 }
 
-
+.btn-new{
+    padding: 10px 15px;
+    width: max-content;
+    border-radius: 5px;
+    color: #459b5e;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    border: 2px solid #459b5e;
+}
+btn-new1{
+    padding: 10px 15px;
+    width: max-content;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    border: 3px solid #ffffff;
+}
 html {
     scroll-behavior: smooth;
     font-family: "Ubuntu", sans-serif;
@@ -21,7 +44,8 @@ html {
 header{
     /* background-color: #fff;
     color: #000; */
-    color: #4b4b4b;
+    color: white;
+    background-color: #459b5e;
 }
 
 
@@ -51,7 +75,7 @@ header > .collapsible-header{
 
 
 .header-links:hover {
-    color: #000000;
+    color: var(--header-link-hover);
     /* background-color: var(--header-link-hover); */
 }
 
