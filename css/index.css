@@ -24,7 +24,7 @@
     cursor: pointer;
     border: 2px solid #459b5e;
 }
-btn-new1{
+.btn-new1{
     padding: 10px 15px;
     width: max-content;
     border-radius: 5px;
@@ -34,7 +34,7 @@ btn-new1{
     align-items: center;
     display: flex;
     cursor: pointer;
-    border: 3px solid #ffffff;
+    border: 1px solid #ffffff;
 }
 html {
     scroll-behavior: smooth;
